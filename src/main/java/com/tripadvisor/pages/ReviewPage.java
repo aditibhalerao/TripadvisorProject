@@ -24,7 +24,6 @@ public class ReviewPage extends CommonFunctions {
 	WebElement YourReviewTitle;
 	
 	@FindBy(xpath="//div[text()='Hotel Ratings']//following::div[@class= 'detailsRatings'][1]")
-	//div[text()='Hotel Ratings']/parent::div/div[@class='ratingBubbleTable']/div[1]//div[@class='detailsRatings']
 	WebElement ServiceRatings;
 	
 	@FindBy(xpath="//div[text()='Hotel Ratings']//following::div[@class= 'detailsRatings'][2]")
@@ -78,6 +77,7 @@ public void setCleanlinessRatings() {
 
 public void submitReview() {
 	click(submitReviewCheckbox);
+	System.out.println("-------Submit checkbox checked-------");
 	
 }
 

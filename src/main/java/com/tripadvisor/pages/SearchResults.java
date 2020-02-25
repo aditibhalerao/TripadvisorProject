@@ -32,11 +32,6 @@ public class SearchResults extends CommonFunctions {
 
 	
 	public void search() throws InterruptedException {
-//		List<WebElement> list = InitDriver.driver.findElements(By.xpath("//*[class='sbx_banner']"));
-//		if(list.size()>0) {
-		
-//			
-//		}
 				
 		List<WebElement> SearchBoxList= InitDriver.driver.findElements(By.xpath("//*[@action='/Search']/*[@type='search']"));
 		

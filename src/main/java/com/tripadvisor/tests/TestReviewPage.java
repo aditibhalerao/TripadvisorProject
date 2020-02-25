@@ -25,7 +25,7 @@ public class TestReviewPage extends CommonFunctions {
 			resultPage.clickOnReview();
 			reviewPage =resultPage.switchtoReviewPage();
 			//Thread.sleep(5000);
-			reviewPage.giveOverallRatings(4);
+			reviewPage.giveOverallRatings(3);
 			Thread.sleep(2000);
 			reviewPage.writeReviewTitle();
 			reviewPage.setServiceRatings();

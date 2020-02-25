@@ -31,6 +31,7 @@ public class TestReviewPage extends CommonFunctions {
 			reviewPage.setServiceRatings();
 			reviewPage.setRoomRatings();
 			reviewPage.setCleanlinessRatings();
+			reviewPage.submitReview();
 			
 			Thread.sleep(5000);
 			close();

@@ -33,6 +33,12 @@ public class ReviewPage extends CommonFunctions {
 	@FindBy(xpath="//div[text()='Hotel Ratings']//following::div[@class= 'detailsRatings'][3]")
 	WebElement CleanlinessRatings;
 	
+	@FindBy(id="noFraud")
+	WebElement submitReviewCheckbox;
+	
+	@FindBy(id="SUBMIT")
+	WebElement submitButton;
+	
 public void giveOverallRatings(int stars) {
 	setRatings(stars, ratings);
 	System.out.println("----Overall ratings given----");
@@ -49,7 +55,6 @@ public void setServiceRatings() {
 	
 	String ratingTitleXpath = getXpath(ServiceRatings)+"/parent::div/preceding-sibling::div[@class='detailsQuestion question']";
 	String ratingTitle = InitDriver.driver.findElement(By.xpath(ratingTitleXpath)).getText();
-	System.out.println(ratingTitle);
 	System.out.println("----"+ratingTitle+" ratings given----");
 	}
 
@@ -58,7 +63,6 @@ public void setRoomRatings() {
 	
 	String ratingTitleXpath = getXpath(RoomRatings)+"/parent::div/preceding-sibling::div[contains(@class,'detailsQuestion')]";
 	String ratingTitle = InitDriver.driver.findElement(By.xpath(ratingTitleXpath)).getText();
-	System.out.println(ratingTitle);
 	System.out.println("----"+ratingTitle+" ratings given----");
 
 	}
@@ -68,10 +72,13 @@ public void setCleanlinessRatings() {
 	
 	String ratingTitleXpath = getXpath(CleanlinessRatings)+"/parent::div/preceding-sibling::div[contains(@class,'detailsQuestion')]";
 	String ratingTitle = InitDriver.driver.findElement(By.xpath(ratingTitleXpath)).getText();
-	System.out.println(ratingTitle);
 	System.out.println("----"+ratingTitle+" ratings given----");
 
 	}
+
+public void submitReview() {
+	click(submitReviewCheckbox);
+}
 
 
 }

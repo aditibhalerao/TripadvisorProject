@@ -1,4 +1,4 @@
-package constants;
+package com.tripadvisor.constants;
 
 public class Constants {
 	

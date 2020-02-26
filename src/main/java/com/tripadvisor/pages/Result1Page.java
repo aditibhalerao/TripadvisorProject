@@ -1,12 +1,12 @@
-package pages;
+package com.tripadvisor.pages;
 
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import basePackage.InitDriver;
-import constants.Constants;
+import com.tripadvisor.basePackage.*;
+import com.tripadvisor.constants.*;
 
 public class Result1Page extends CommonFunctions {
 

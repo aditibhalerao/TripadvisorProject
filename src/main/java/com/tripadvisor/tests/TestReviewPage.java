@@ -1,10 +1,8 @@
-package tests;
+package com.tripadvisor.tests;
 
-import basePackage.InitDriver;
-import pages.CommonFunctions;
-import pages.Result1Page;
-import pages.ReviewPage;
-import pages.SearchResults;
+import com.tripadvisor.basePackage.InitDriver;
+import com.tripadvisor.pages.*;
+
 
 public class TestReviewPage extends CommonFunctions {
 	
@@ -26,10 +24,7 @@ public class TestReviewPage extends CommonFunctions {
 			//Thread.sleep(5000);
 			reviewPage.giveOverallRatings(3);
 			Thread.sleep(2000);
-			reviewPage.writeReviewTitle();
-			reviewPage.setServiceRatings();
-			reviewPage.setRoomRatings();
-			reviewPage.setCleanlinessRatings();
+			reviewPage.writeReviewTitle().setServiceRatings(4).setRoomRatings(3).setCleanlinessRatings(3);
 			reviewPage.submitReview();
 			
 			Thread.sleep(5000);

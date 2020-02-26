@@ -1,4 +1,4 @@
-package basePackage;
+package com.tripadvisor.basePackage;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
-import constants.Constants;
+import com.tripadvisor.constants.Constants;
 
 public class InitDriver {
 	

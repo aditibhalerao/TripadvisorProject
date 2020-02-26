@@ -1,8 +1,7 @@
 package tests;
 
-import org.openqa.selenium.WebDriver;
-import baseClass.CommonFunctions;
-import baseClass.InitDriver;
+import basePackage.InitDriver;
+import pages.CommonFunctions;
 import pages.Result1Page;
 import pages.ReviewPage;
 import pages.SearchResults;
